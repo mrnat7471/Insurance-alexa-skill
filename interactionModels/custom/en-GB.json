@@ -1,0 +1,212 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "persona something",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AccidentIntent",
+          "slots": [
+            {
+              "name": "Accident_Type",
+              "type": "Accident_Type"
+            }
+          ],
+          "samples": [
+            "a {Accident_Type}",
+            "i had a {Accident_Type}",
+            "{Accident_Type}",
+            "it was a {Accident_Type}"
+          ]
+        },
+        {
+          "name": "NameIntent",
+          "slots": [
+            {
+              "name": "Name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "my name is {Name}"
+          ]
+        },
+        {
+          "name": "PolicyIntent",
+          "slots": [
+            {
+              "name": "Policy_Number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "the policy is {Policy_Number}",
+            "the number is {Policy_Number}",
+            "the policy number is {Policy_Number}",
+            "my policy number is {Policy_Number}"
+          ]
+        },
+        {
+          "name": "DateIntent",
+          "slots": [
+            {
+              "name": "Date",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "the accident happened {Date}",
+            "the date was {Date}",
+            "{Date}",
+            "it happened {Date}"
+          ]
+        },
+        {
+          "name": "LocationIntent",
+          "slots": [
+            {
+              "name": "Location",
+              "type": "AMAZON.EUROPE_CITY"
+            }
+          ],
+          "samples": [
+            "{Location}",
+            "it happened in {Location}",
+            "it happened at {Location}"
+          ]
+        },
+        {
+          "name": "OtherNameIntent",
+          "slots": [
+            {
+              "name": "Othername",
+              "type": "AMAZON.GB_FIRST_NAME"
+            }
+          ],
+          "samples": [
+            "their name was {Othername}",
+            "it was {Othername}",
+            "it is {Othername}"
+          ]
+        },
+        {
+          "name": "OtherPhoneIntent",
+          "slots": [
+            {
+              "name": "otherphone",
+              "type": "AMAZON.PhoneNumber"
+            }
+          ],
+          "samples": [
+            "their number was {otherphone}",
+            "their phone number is {otherphone}"
+          ]
+        },
+        {
+          "name": "ConfirmIntent",
+          "slots": [],
+          "samples": [
+            "correct",
+            "confirm"
+          ]
+        },
+        {
+          "name": "ClaimIntent",
+          "slots": [
+            {
+              "name": "yes_no_answer",
+              "type": "YES_NO_SLOT"
+            }
+          ],
+          "samples": [
+            "{yes_no_answer}"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Fire"
+              }
+            },
+            {
+              "name": {
+                "value": "Car"
+              }
+            }
+          ],
+          "name": "Accident_Type"
+        },
+        {
+          "values": [
+            {
+              "id": "FALSE",
+              "name": {
+                "value": "no",
+                "synonyms": [
+                  "no thanks",
+                  "no thank you",
+                  "i do not",
+                  "nope"
+                ]
+              }
+            },
+            {
+              "id": "TRUE",
+              "name": {
+                "value": "yes",
+                "synonyms": [
+                  "yes please",
+                  "i do",
+                  "yeah",
+                  "yep"
+                ]
+              }
+            }
+          ],
+          "name": "YES_NO_SLOT"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "20"
+}
